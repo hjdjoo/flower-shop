@@ -13,6 +13,7 @@ const OrderForm = props => {
               <label htmlFor="cust_last">Sender's last name:</label>
               <input type="text" name="cust_last" />
             </div>
+            <br />
             <div className="contact">
               <label htmlFor="cust_street">Billing street address:</label>
               <input type="text" name="cust_street" />
@@ -33,6 +34,7 @@ const OrderForm = props => {
               <label htmlFor="recip_last">Recipient's last name:</label>
               <input type="text" name="recip_last" />
             </div>
+            <br />
             <div className="contact">
               <label htmlFor="recip_street">Recipient's street address:</label>
               <input type="text" name="recip_street" />
@@ -43,10 +45,11 @@ const OrderForm = props => {
               <label htmlFor="recip_phone">Recipient's phone number</label>
               <input type="text" name="recip_phone" />
             </div>
+            <br />
             <label htmlFor="message">Enter your message here:</label>
             <input type="text" name="message" />
             <br />
-            <input type="button" value="Submit Order" />
+            <input type="button" value="Submit Order" onClick={() => { console.log("hello") }} />
           </div>
         </form>
       </div>

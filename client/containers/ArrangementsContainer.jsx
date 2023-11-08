@@ -11,7 +11,6 @@ import Arrangement from '../components/Arrangement.jsx';
 
 const ArrangementsContainer = (props) => {
   // create array of image divs to render.
-
   const images = [];
   const arrangementInfo = [
     {
@@ -50,11 +49,8 @@ const ArrangementsContainer = (props) => {
   for (let i = 0; i < 6; i++) {
     // const source = arrangementInfo[i].src
     // console.log(source)
-    images.push(<Arrangement src={require(`../docs/assets/images/${i + 1}.jpg`)} className='image' id={`img${i + 1}`} text={arrangementInfo[i].name} price={arrangementInfo[i].price} />)
+    images.push(<Arrangement src={require(`../docs/assets/images/${i + 1}.jpg`)} className='image' id={`img${i + 1}`} text={arrangementInfo[i].name} price={arrangementInfo[i].price} onClick={props.onClick} />)
   }
-
-
-
   return (
     <div className='arrangementsContainer'>
       {images}

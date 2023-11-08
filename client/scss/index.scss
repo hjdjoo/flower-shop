@@ -1,25 +1,36 @@
 body {
   display: flex;
   flex-direction: column;
-
 }
 
-.arrangementContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-template-rows: 1fr;
-  align-items: center;
-}
-
-.imageButton {
+.arrangementsContainer {
   display: flex;
-  max-width: 50%;
-  flex: 1 1 250px;
+  flex-direction: row;
+  align-items: center;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+
+  .imageButton {
+    display: flex;
+    min-width: 200px;
+    max-width: 40%;
+    flex: 1 1 auto;
+  }
+}
+
+.cartImage {
+  max-width: 100px;
 }
 
 .orderForm {
   display: flex;
+  flex-direction: column;
   justify-self: flex-start;
   align-self: flex-end;
+}
 
+#cartButton {
+  max-width: 50px;
+  align-self: flex-end;
 }
