@@ -1,0 +1,5 @@
+#ignore osx system configs
+.DS_store
+
+#ignore node modules
+node_modules

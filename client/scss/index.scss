@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.arrangementContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.imageButton {
+  display: flex;
+  max-width: 50%;
+  flex: 1 1 250px;
+}
+
+.orderForm {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-end;
+
+}
