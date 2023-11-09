@@ -11,7 +11,6 @@ const orderRouter = require('./routes/order')
 app.use(express.json());
 app.use(express.urlencoded());
 
-
 /** serve static files to front end */
 // console.log('server.js - trying to serve ', path.join(__dirname, '../dist'))
 app.use(express.static(path.join(__dirname, '/client')))

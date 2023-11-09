@@ -3,8 +3,6 @@ const { Pool } = require('pg');
 require('dotenv').config();
 const pass = process.env.password
 // require in memoized OrderId function to update order id values...?
-const makeCustId = require('../makeCustId')
-const makeOrderId = require('../makeOrderId')
 const orderController = {};
 
 // elephantSQL URL
