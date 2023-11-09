@@ -5,23 +5,23 @@ import CartButton from "../components/CartButton";
 import Checkout from "../components/CheckOut";
 
 
-const CartContainer = props => {
+const CartContainer = () => {
 
   const ordersArr = [];
   const orders = useSelector(state => state.cart)
-  for (let order of orders) {
-    console.log(order)
+  for (let i = 0; i < orders.length; i++) {
+    const order = orders[i]
+    // console.log(order)
     ordersArr.push(<Cart src={order.src} name={order.name} price={order.price} />)
   }
 
   return (
-    <div>
+    <div className="cartContainer">
       <CartButton />
-      {ordersArr}
       <Checkout />
+      {ordersArr}
     </div>
   )
-
 };
 
 

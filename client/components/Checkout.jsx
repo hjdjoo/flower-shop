@@ -2,8 +2,8 @@ import React from "react";
 
 const Checkout = () => {
   return (
-    <div id="checkOutBtn">
-      <button type="button">Checkout</button>
+    <div >
+      <button type="button" id="checkoutBtn">Checkout</button>
     </div>
   )
 };

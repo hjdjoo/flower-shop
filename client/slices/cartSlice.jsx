@@ -11,7 +11,6 @@ const cartSlice = createSlice({
       state.push(action.payload)
     }
     // removeFromCart: (state, action) => {
-
     // }
   }
 })

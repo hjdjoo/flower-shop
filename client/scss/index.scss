@@ -19,8 +19,23 @@ body {
   }
 }
 
-.cartImage {
-  max-width: 100px;
+.cartContainer {
+  display: flex;
+  gap: 15px;
+
+  #checkoutBtn {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .cartImage {
+    max-width: 125px;
+  }
+
+  .cartText {
+    font-size: small;
+  }
+
 }
 
 .orderForm {

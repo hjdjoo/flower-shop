@@ -55,6 +55,12 @@ module.exports = {
   devServer: {
     static: {
       publicPath: '/'
+    },
+    proxy: {
+      '/place_order': {
+        target: 'http://localhost:8080',
+        router: () => 'http://localhost:3000'
+      }
     }
   },
   plugins: [new HtmlWebpackPlugin({
