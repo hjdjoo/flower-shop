@@ -6,8 +6,8 @@ const orderController = require('../controllers/orderController')
 
 const router = express.Router();
 
-router.post('/', orderController.createOrder, (req, res, next) => {
-  console.log(req.body);
+router.post('/', orderController.createCustomer, orderController.createOrder, (req, res, next) => {
+  // console.log(req.body);
 
 });
 
