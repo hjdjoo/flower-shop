@@ -3,13 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const orderSlice = createSlice({
   name: 'order',
-  initialState: { order_id: 1 },
+  initialState: {},
   reducers: {
     createOrder: (state, action) => {
       state = Object.assign(state, action.payload)
-    },
-    placeOrder: (state, action) => {
-      state.order_id = action.payload;
     }
   }
 })

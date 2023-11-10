@@ -2,8 +2,6 @@ import React from "react";
 
 
 const CcForm = () => {
-
-
   return (
     <>
       <div className="ccBox">

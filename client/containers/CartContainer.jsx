@@ -18,7 +18,6 @@ const CartContainer = () => {
   return (
     <div className="cartContainer">
       <CartButton />
-      <Checkout />
       {ordersArr}
     </div>
   )

@@ -5,15 +5,17 @@ import './scss/index.scss';
 import App from './App.jsx'
 import store from './store';
 import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 // console.log('hit index.js')
-
 
 
 const root = createRoot(document.getElementById('root'))
 // console.log('index.js - root: ', root);
 root.render(
   <Provider store={store}>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </Provider>
 )

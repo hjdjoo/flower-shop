@@ -60,6 +60,14 @@ module.exports = {
       '/place_order': {
         target: 'http://localhost:8080',
         router: () => 'http://localhost:3000'
+      },
+      '/find_customer': {
+        target: 'http://localhost:8080',
+        router: () => 'http://localhost:3000'
+      },
+      '/update_customer': {
+        target: 'http://localhost:8080',
+        router: () => 'http://localhost:3000'
       }
     }
   },

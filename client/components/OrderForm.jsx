@@ -28,8 +28,8 @@ const OrderForm = props => {
               <label htmlFor="cust_phone">Sender's phone number</label>
               <input type="text" name="cust_phone" onChange={props.onChange} />
             </div>
-
           </div>
+
           <div className="recipInfo">
             <p>Recipient Information</p>
             <div className="name">

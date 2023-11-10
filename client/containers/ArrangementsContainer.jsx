@@ -1,9 +1,3 @@
-/**
- * 
- * @module ArrangementsContainer
- * @description stateful component that renders ArrangementsDisplay and OrderCreator
- *
- */
 import React from 'react';
 import Arrangement from '../components/Arrangement.jsx';
 
