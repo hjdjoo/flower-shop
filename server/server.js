@@ -6,6 +6,7 @@ const PORT = 3000;
 
 /** Require in routers*/
 const orderRouter = require('./routes/order')
+const customerRouter = require('./routes/customer')
 
 /** parse incoming requests */
 app.use(express.json());
@@ -23,6 +24,8 @@ app.use('/dist', express.static(path.join(__dirname, '../dist')))
 /** Define route handlers */
 console.log('about to handle route handlers');
 app.use('/place_order', orderRouter)
+app.use('/find_customer', customerRouter)
+app.use('/update_customer', customerRouter)
 
 
 

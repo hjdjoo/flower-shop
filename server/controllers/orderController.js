@@ -83,7 +83,7 @@ orderController.createOrder = async (req, res, next) => {
     }
     const response = await pool.query(orderQuery);
     console.log(response);
-    return next();
+    return res.status(200).send("Successfully created new order!")
   }
   catch {
     const error = {
